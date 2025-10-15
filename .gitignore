@@ -1,2 +1,12 @@
 vendor
 vendor/*
+var/cache/**
+var/cache/*
+var/csr/**
+var/csr/*
+var/log/**
+var/log/*
+var/run/**
+var/run/*
+var/tmp/**
+var/tmp/*
