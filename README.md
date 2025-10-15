@@ -1,8 +1,7 @@
-# **Shinobi Engine / Core Platform Specification**
-
 Shinobi Core is a next-generation platform that lets businesses instantly assemble, scale, and enhance their digital capabilities. Think of it as a supercharged toolkit for building smarter services, faster—without the headaches of managing complex infrastructure. It’s modular, resilient, and secure by design, making it a solid foundation for any organization looking to innovate at speed.
 
-**Shinobi doesn’t just run software—it grows smarter on its own.**  
+**Shinobi doesn’t just run software—it grows smarter on its own.**
+
 It dynamically creates, adds, removes, and combines capabilities in real time, unlocking new ways to solve problems, optimize operations, and achieve outcomes that traditional systems can’t even approach. Every action is autonomous, self-correcting, and context-aware, giving businesses a platform that evolves alongside them.
 
 ---
@@ -13,15 +12,11 @@ At its heart, Shinobi runs on a lean, modular architecture inspired by microkern
 
 Shinobi’s architecture ensures that every component operates in harmony while maintaining independence. The orchestration layer supervises operations, enabling rapid deployment of new features, seamless integration of capabilities, and automatic optimization of workflows. In short, Shinobi isn’t just software—it’s a platform that thinks, adapts, and grows smarter over time.
 
----
-
 ## **Core Components**
 
 ### **Federated Service Nodes**
 
 Each Shinobi instance operates as an independent service node that federates its capabilities with others. Nodes cooperate and coordinate to accomplish distributed goals, forming a resilient, intelligent cluster.
-
----
 
 ### **Kernel & User Space Separation**
 
