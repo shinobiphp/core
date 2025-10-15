@@ -50,60 +50,61 @@ At its heart, Shinobi runs on a lean, modular architecture inspired by microkern
 
 Shinobi’s architecture ensures that every component operates in harmony while maintaining independence. The orchestration layer supervises operations, enabling rapid deployment of new features, seamless integration of capabilities, and automatic optimization of workflows. In short, Shinobi isn’t just software—it’s a platform that thinks, adapts, and grows smarter over time.
 
-```text
-                          ┌──────────────────────────────┐
-                          │        Shinobi Core          │
-                          │   (Microkernel Architecture) │
-                          └──────────────┬───────────────┘
-                                         │
-                  ┌──────────────────────┴────────────────────────┐
-                  │                                               │
-          ┌───────▼────────┐                             ┌───────▼────────┐
-          │   Kernel Space  │                             │   User Space   │
-          │ (System Logic)  │                             │ (Capabilities) │
-          └───────┬────────┘                             └───────┬────────┘
-                  │                                               │
-   ┌──────────────▼──────────────────┐              ┌─────────────▼──────────────┐
-   │        Orchestration Layer      │              │   Capability Modules       │
-   │  Workflow & Lifecycle Control   │              │  UI, Integrations, Plugins │
-   └──────────────┬──────────────────┘              └─────────────┬──────────────┘
-                  │                                               │
-   ┌──────────────▼──────────────────┐              ┌─────────────▼──────────────┐
-   │       Message Moderator         │◄────────────►│  Communication Interfaces  │
-   │ Context-Aware Routing & Events  │              │ REST, gRPC, Messaging APIs  │
-   └──────────────┬──────────────────┘              └─────────────┬──────────────┘
-                  │                                               │
-   ┌──────────────▼────────────────────────────┐
-   │     Contextual State Repository (CSR)     │
-   │  System Knowledge Graph / Semantic Store  │
-   └──────────────┬────────────────────────────┘
-                  │
-   ┌──────────────▼────────────────────────────┐
-   │ Entities / Components / Systems Framework │
-   │ ECS-style loops, repositories, registries │
-   └──────────────┬────────────────────────────┘
-                  │
-   ┌──────────────▼────────────────────────────┐
-   │     Stackable Execution Layers            │
-   │ Sync → Async → Federated (Cluster-wide)   │
-   └──────────────┬────────────────────────────┘
-                  │
-   ┌──────────────▼────────────────────────────┐
-   │     Federated Service Nodes (Cluster)     │
-   │ Cooperative, Self-Healing, Distributed    │
-   └──────────────┬────────────────────────────┘
-                  │
-   ┌──────────────▼────────────────────────────┐
-   │        Zero-Trust Security Layer          │
-   │ Identity, Verification, Threat Detection  │
-   └───────────────────────────────────────────┘
-```
-
-## **Core Components**
-
 ### **Federated Service Nodes**
 
 Each Shinobi instance operates as an independent service node that federates its capabilities with others. Nodes cooperate and coordinate to accomplish distributed goals, forming a resilient, intelligent cluster.
+
+### **Architecture Diagram**
+
+```text
+                       ┌──────────────────────────────┐
+                       │    Federated Shinobi Node    |
+                       │     (1 Shinobi Instance)     │
+                       └──────────────┬───────────────┘
+                                      │
+                        ┌──────────────────────────────┐
+                        │        Shinobi Core          │
+                        │   (Microkernel Architecture) │
+                        └──────────────┬───────────────┘
+                  ┌────────────────────▼──────────────────────────┐
+                  │              Zero-Trust Security Layer        │
+                  │   IAM, Perms/Verification, Threat Detection   │
+                  └───────────────────────────────────────────────┘
+                ┌──────────────────────┴────────────────────────┐
+                │                                               │
+        ┌───────▼────────┐                             ┌───────▼────────┐
+        │   Kernel Space │                             │   User Space   │
+        │ (System Logic) │                             │ (Capabilities) │
+        └───────┬────────┘                             └───────┬────────┘
+                │                                              │
+ ┌──────────────▼──────────────────┐              ┌─────────────▼──────────────┐
+ │        Orchestration Layer      │              │   Capability Modules       │
+ │  Workflow & Lifecycle Control   │              │  UI, Integrations, Plugins │
+ └──────────────┬──────────────────┘              └─────────────┬──────────────┘
+                │                                               │
+ ┌──────────────▼──────────────────┐              ┌─────────────▼──────────────┐
+ │       Message Moderator         │◄────────────►│  Communication Interfaces  │
+ │ Context-Aware Routing & Events  │              │ REST, gRPC, Messaging APIs │
+ └──────────────┬──────────────────┘              └────────────────────────────┘
+                │
+ ┌──────────────▼────────────────────────────┐
+ │     Contextual State Repository (CSR)     │
+ │  System Knowledge Graph / Semantic Store  │
+ └──────────────┬────────────────────────────┘
+                │
+ ┌──────────────▼────────────────────────────┐
+ │ Entities / Components / Systems Framework │
+ │ ECS-style loops, repositories, registries │
+ └──────────────┬────────────────────────────┘
+                │
+ ┌──────────────▼────────────────────────────┐
+ │     Stackable Execution Layers            │
+ │ Sync → Async → Federated (Cluster-wide)   │
+ └──────────────-────────────────────────────┘
+
+```
+
+## **Core Components**
 
 ### **Kernel & User Space Separation**
 
