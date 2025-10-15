@@ -1,10 +1,10 @@
+# Meet Shinobi
+
 Shinobi Core is a next-generation platform that lets businesses instantly assemble, scale, and enhance their digital capabilities. Think of it as a supercharged toolkit for building smarter services, faster—without the headaches of managing complex infrastructure. It’s modular, resilient, and secure by design, making it a solid foundation for any organization looking to innovate at speed.
 
 **Shinobi doesn’t just run software—it grows smarter on its own.**
 
 It dynamically creates, adds, removes, and combines capabilities in real time, unlocking new ways to solve problems, optimize operations, and achieve outcomes that traditional systems can’t even approach. Every action is autonomous, self-correcting, and context-aware, giving businesses a platform that evolves alongside them.
-
----
 
 ## **Architecture Overview**
 
@@ -54,8 +54,6 @@ The kernel contains Shinobi’s fundamental intelligence—responsible for orche
 
 User space consists of capability modules, UI/UX functionality, and compatibility shims for third-party or legacy software. It’s extensible and safe—sandboxed from the kernel while leveraging its services.
 
----
-
 ## **Key Features & Platform Highlights**
 
 ### **Autonomous, Self-Evolving Intelligence**
@@ -94,7 +92,7 @@ Operators can shift contexts seamlessly—moving between domains like Sales, Sup
 
 Execution layers are stackable: synchronous, asynchronous, and federated. This design ensures graceful degradation and fault tolerance. Runtimes are swappable, enabling workloads to execute in any context—CLI, daemon, web, or server—and even run legacy frameworks or third-party code safely.
 
----
+## Architecture Diagram
 
 ```text
                           ┌──────────────────────────────┐
