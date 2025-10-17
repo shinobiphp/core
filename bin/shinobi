@@ -1,5 +1,14 @@
 #!/usr/bin/env php
 <?php
+declare(strict_types=1);
+
+use Shinobi\Shinobi;
+use Shinobi\Cli\Runtime as CliRuntime;
+use Shinobi\Kernel\Kernel;
+
+// ensure autoload
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-$app = \Shinobi\Shinobi::boot(root: dirname(__DIR__) . '/');
+$app = \Shinobi\Cli\Runtime::boot();
+
+exit($runtime->run());

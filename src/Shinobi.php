@@ -1,17 +1,15 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Shinobi;
 
-class Shinobi {
-    protected function __construct(protected String $root) {
+use Shinobi\Kernel\Kernel;
 
-    }
-
-    public static function boot(String $root): self
+final class Shinobi
+{
+    public static function boot(string $root): Kernel
     {
-        $app = new static(root: $root);
-
-        return $app;
+        return Kernel::boot($root);
     }
 }
