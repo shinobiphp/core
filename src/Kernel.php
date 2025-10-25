@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Shinobi;
+namespace Shinobi\Core;
 
 use Shinobi\Shinobi;
 
