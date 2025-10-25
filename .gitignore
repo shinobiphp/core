@@ -1,0 +1,9 @@
+/vendor/
+/bin/
+/.env
+/.idea/
+/.vscode/
+/var/
+/composer.lock
+/.gemini
+Gemini.md

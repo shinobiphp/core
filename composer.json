@@ -23,7 +23,6 @@
         "source": "https://github.com/shinobiphp/core"
     },
     "config": {
-	    "bin-dir": "./bin/"
+        "bin-dir": "./bin/"
     }
 }
-
