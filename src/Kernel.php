@@ -5,10 +5,6 @@ namespace Shinobi;
 
 use Shinobi\Shinobi;
 
-use Shinobi\CSR\Csr;
-use Shinobi\Discovery\Engine;
-use Shinobi\Orchestration\Engine;
-
 final class Kernel {
 	private static array $instances = array();
 
