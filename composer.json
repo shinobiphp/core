@@ -1,6 +1,6 @@
 {
     "name": "shinobiphp/core",
-    "description": "Shinobi framework core: Kernel, Discovery, Orchestration, Config plumbing.",
+    "description": "Shinobi Core: Kernel, Discovery, Orchestration, CSR/Config.",
     "type": "library",
     "license": "proprietary",
     "minimum-stability": "dev",
