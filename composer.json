@@ -1,0 +1,29 @@
+{
+    "name": "shinobiphp/core",
+    "description": "Shinobi framework core: Kernel, Discovery, Orchestration, Config plumbing.",
+    "type": "library",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Shinobi\\Core\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*",
+        "ext-openswoole": "*",
+        "symfony/console": "^7.3"
+    },
+    "support": {
+        "email": "thephp.ninja1369@gmail.com",
+        "issues": "https://github.com/shinobiphp/core/issues",
+        "docs": "https://github.com/shinobiphp/core/blob/main/docs/SPEC.md",
+        "source": "https://github.com/shinobiphp/core"
+    },
+    "config": {
+	    "bin-dir": "./bin/"
+    }
+}
+

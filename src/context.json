@@ -1,0 +1,38 @@
+{
+    "namespace": "core",
+    "name": "Shinobi Core",
+    "slug": "core",
+    "package": "shinobiphp/core",
+    "version": "1.0.0",
+    "description": "Framework and runtime foundation for Shinobi. Provides Kernel, Orchestration, Discovery, Config, and Core plumbing services.",
+    "tags": ["core", "framework", "kernel", "orchestration", "discovery", "config"],
+    "provides": [
+        "kernel",
+        "orchestration",
+        "discovery",
+        "configuration",
+        "lifecycle"
+    ],
+    "depends": [],
+    "entrypoint": "\\Shinobi\\Core\\Kernel",
+    "lifecycle": {
+        "init": "boot",
+        "runtime": "run",
+        "shutdown": "shutdown"
+    },
+    "capabilities": {
+        "discoverable": true,
+        "sandboxed": true,
+        "parallel": true
+    },
+    "security": {
+        "signed": true,
+        "trusted": false,
+        "idempotent": true
+    },
+    "metadata": {
+        "author": "Shinobi PHP",
+        "license": "proprietary",
+        "created": "2025-10-25T00:00:00Z"
+    }
+}
